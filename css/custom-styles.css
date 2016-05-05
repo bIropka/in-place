@@ -1,0 +1,43 @@
+@font-face {font-family: "OpenSans Regular";src: url("../fonts/OpenSansRegular.ttf");}
+@font-face {font-family: "OpenSans Semibold";src: url("../fonts/OpenSansSemiBold.ttf");}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "OpenSans Semibold", sans-serif;
+    color: #333333;
+}
+
+button, input[type="submit"] {
+    cursor: pointer;
+}
+
+a, a:hover, a:active, button::-moz-focus-inner, button, button:hover, button:active, input, input:hover, input:active {
+    outline: none;
+    border: none;
+}
+
+.form-field::-webkit-input-placeholder {font-size: 24px;}
+.form-field::-moz-placeholder {font-size: 24px;}
+.form-field:-moz-placeholder {font-size: 24px;}
+.form-field:-ms-input-placeholder {font-size: 24px;}
+.form-field:focus::-webkit-input-placeholder {color: transparent;}
+.form-field:focus::-moz-placeholder {color: transparent;}
+.form-field:focus:-moz-placeholder {color: transparent;}
+.form-field:focus:-ms-input-placeholder {color: transparent;}
+
+.clearfix {clear: both;}
+
+ul li {display: inline-block;}
+
+.text-thin {font-family: "OpenSans Regular", sans-serif;}
+
+.ultra-small-text {font-size: 14px;}
+.small-text {font-size: 18px;}
+.text {font-size: 24px;}
+h3 {font-size: 30px;}
+h2 {font-size: 36px;}
+h1 {font-size: 45px;}
