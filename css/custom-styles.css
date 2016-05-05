@@ -1,6 +1,6 @@
 @font-face {font-family: "OpenSans Regular";src: url("../fonts/OpenSansRegular.ttf");}
 @font-face {font-family: "OpenSans Semibold";src: url("../fonts/OpenSansSemiBold.ttf");}
-
+/* general rules */
 * {
     margin: 0;
     padding: 0;
@@ -20,10 +20,10 @@ a, a:hover, a:active, button::-moz-focus-inner, button, button:hover, button:act
     border: none;
 }
 
-.form-field::-webkit-input-placeholder {font-size: 24px;}
-.form-field::-moz-placeholder {font-size: 24px;}
-.form-field:-moz-placeholder {font-size: 24px;}
-.form-field:-ms-input-placeholder {font-size: 24px;}
+.form-field::-webkit-input-placeholder {font-size: 24px;color: #333333;opacity: 1;}
+.form-field::-moz-placeholder {font-size: 24px;color: #333333;opacity: 1;}
+.form-field:-moz-placeholder {font-size: 24px;color: #333333;opacity: 1;}
+.form-field:-ms-input-placeholder {font-size: 24px;color: #333333;opacity: 1;}
 .form-field:focus::-webkit-input-placeholder {color: transparent;}
 .form-field:focus::-moz-placeholder {color: transparent;}
 .form-field:focus:-moz-placeholder {color: transparent;}
@@ -33,11 +33,79 @@ a, a:hover, a:active, button::-moz-focus-inner, button, button:hover, button:act
 
 ul li {display: inline-block;}
 
+.text-brown {color: #be793e;}
+.text-grey {color: #999999;}
+.text-white {color: #ffffff;}
 .text-thin {font-family: "OpenSans Regular", sans-serif;}
-
-.ultra-small-text {font-size: 14px;}
-.small-text {font-size: 18px;}
+.text-ultra-small {font-size: 14px;}
+.text-small {font-size: 18px;}
 .text {font-size: 24px;}
 h3 {font-size: 30px;}
 h2 {font-size: 36px;}
 h1 {font-size: 45px;}
+
+.block-content {
+    width: 95%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* form */
+form {
+    width: 400px;
+    background: rgba(93, 81, 71, 1);
+    text-align: center;
+    padding: 35px 0 30px;
+}
+form h3 {
+    letter-spacing: -2px;
+    font-size: 28px;
+}
+.form-field-wrap {
+    display: block;
+    width: 85%;
+    height: 60px;
+    margin: 35px auto 0;
+}
+.form-field {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding-left: 35px;
+}
+.button-submit {
+    width: 83%;
+    height: 60px;
+    margin: 35px auto 0;
+    background: #be413e;
+    border: 3px solid #ffffff;
+    outline: 5px solid #be413e;
+    color: #ffffff;
+    font-size: 30px;
+}
+.button-submit:active {
+    background: #702724;
+}
+
+/* header */
+
+/* choice */
+
+/* cabinet-furniture */
+
+/* block-form */
+
+/* guarantee */
+
+/* why-we */
+
+/* what-later */
+
+/* questions */
+
+/* reviews */
+
+/* contacts */
+.on-map {
+    width: 420px;
+}
