@@ -39,10 +39,9 @@
 
     </div>
 
+    <div class="header-middle">
 
-    <div class="empty-block"></div><!--
-
- --><div class="header-middle">
+        <div class="empty-block-left"></div>
 
         <h1 class="text-white">Профессиональный подбор мебели для квартир и домов</h1>
 
@@ -52,15 +51,15 @@
 
         <h2 class="text-white">Поиск от 1 до 3 дней.</h2>
 
-    </div><!--
+        <div class="empty-block-right"></div>
 
- --><div class="empty-block"></div>
+    </div>
 
-    <form action="#">
+    <form id="form-1" action="mail-1.php">
         <h3 class="text-white text-thin">Cэкономьте от 30% до 70%</h3>
-        <label class="form-field-wrap"><input type="text" class="form-field" placeholder="Впишите Ваше имя:" required></label>
-        <label class="form-field-wrap"><input type="text" class="form-field" placeholder="Впишите Ваш телефон:" required></label>
-        <input class="button-submit" type="submit" value="Заказать расчет">
+        <label class="form-field-wrap"><input id="name-1" name="name-1" type="text" class="form-field" placeholder="Впишите Ваше имя:" required></label>
+        <label class="form-field-wrap"><input id="phone-1" name="phone-1" type="text" class="form-field" placeholder="Впишите Ваш телефон:" required></label>
+        <input class="button-submit" name="submit" type="submit" value="Заказать подбор">
     </form>
 
     <div class="clearfix"></div>
@@ -133,11 +132,11 @@
 
     </div>
 
-    <form action="#">
+    <form id="form-2" action="mail-2.php">
         <h3 class="text-white text-thin">Cэкономьте от 30% до 70%</h3>
-        <label class="form-field-wrap"><input type="text" class="form-field" placeholder="Впишите Ваше имя:" required></label>
-        <label class="form-field-wrap"><input type="text" class="form-field" placeholder="Впишите Ваш телефон:" required></label>
-        <input class="button-submit" type="submit" value="Заказать расчет">
+        <label class="form-field-wrap"><input id="name-2" name="name-2" type="text" class="form-field" placeholder="Впишите Ваше имя:" required></label>
+        <label class="form-field-wrap"><input id="phone-2" name="phone-2" type="text" class="form-field" placeholder="Впишите Ваш телефон:" required></label>
+        <input class="button-submit" name="submit" type="submit" value="Заказать расчет">
     </form>
 
 </div>
@@ -370,11 +369,11 @@
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QssIuVoJqixNHr5VMKDanZxd9GJs-AOf&width=100%&height=320&lang=ru_UA&sourceType=constructor&scroll=true"></script>
     </div>
 
-    <form action="#">
+    <form id="form-3" action="mail-3.php">
         <h3 class="text-white text-thin">Cэкономьте от 30% до 70%</h3>
-        <label class="form-field-wrap"><input type="text" class="form-field" placeholder="Впишите Ваше имя:" required></label>
-        <label class="form-field-wrap"><input type="text" class="form-field" placeholder="Впишите Ваш телефон:" required></label>
-        <input class="button-submit" type="submit" value="Заказать расчет">
+        <label class="form-field-wrap"><input id="name-3" name="name-3" type="text" class="form-field" placeholder="Впишите Ваше имя:" required></label>
+        <label class="form-field-wrap"><input id="phone-3" name="phone-3" type="text" class="form-field" placeholder="Впишите Ваш телефон:" required></label>
+        <input class="button-submit" name="submit" type="submit" value="Заказать расчет">
     </form>
 
     <div class="logo"></div>
@@ -388,6 +387,13 @@
         </p>
     </div>
 
+</div>
+
+<div class="ip-window window-ok">
+    <div class="ip-form form-ok">
+        <div class="title">Ваша заявка отправлена!</div>
+        <button class="form-ok-button">OK</button>
+    </div>
 </div>
 
 <script src="js/jquery-2.1.4.min.js"></script>
