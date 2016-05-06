@@ -49,7 +49,7 @@ h2 {
     line-height: 1;
 }
 h1 {
-    display: inline-block;
+    display: block;
     font-size: 43px;
     letter-spacing: -2px;
     line-height: 1.5;
@@ -73,7 +73,7 @@ h1 {
 }
 
 .block-content {
-    width: 95%;
+    width: 100%;
     max-width: 1366px;
     margin: 0 auto;
     text-align: center;
@@ -82,13 +82,19 @@ h1 {
 
 .phone-block {
     display: inline-block;
-    width: 350px;
+    width: 300px;
     height: 80px;
 }
 .phone-block .phone-number {
     line-height: 35px;
     height: 35px;
     margin: 5px 0 0 0;
+}
+.phone-block .icon-phone {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 38px;
 }
 .callback {
     line-height: 35px;
@@ -142,35 +148,34 @@ form h3 {
 }
 .header-top .empty-block {
     display: inline-block;
-    width: 70px;
+    width: 5.124450951683748%;
     height: 80px;
     background: #be793e;
     vertical-align: middle;
 }
 .logo-block {
     display: inline-block;
-    width: 400px;
+    width: 29.28257686676428%;
+    min-width: 200px;
     height: 70px;
     background: rgba(93, 81, 71, 0.9);
     vertical-align: middle;
 }
 .header-top .logo {
-    width: 175px;
-    height: 44px;
     margin: 13px 0 13px 10px;
     background: url('../images/sprite-logo.png') no-repeat left center;
     background-size: cover;
 }
 .header-top-right {
     display: inline-block;
-    width: 896px;
+    width: 65.59297218155198%;
     height: 80px;
     background: #be793e;
     vertical-align: middle;
 }
 nav {
     display: inline-block;
-    width: 546px;
+    width: 60.9375%;
     vertical-align: middle;
 }
 nav ul {
@@ -193,24 +198,20 @@ nav ul li a:hover {
     vertical-align: middle;
 }
 .header .icon-phone {
-    display: inline-block;
-    vertical-align: middle;
-    width: 35px;
-    height: 38px;
     background: url('../images/sprite-phones.png') no-repeat left center;
     background-size: cover;
 }
 
 .header-middle {
     display: inline-block;
-    width: 1220px;
+    width: 89.31185944363104%;
     height: 165px;
     background: rgba(93, 81, 71, 0.9);
     vertical-align: middle;
 }
 .header>.empty-block {
     display: inline-block;
-    width: 50px;
+    width: 3.660322108345534%;
     height: 180px;
     vertical-align: middle;
     background: #be793e;
@@ -230,7 +231,8 @@ nav ul li a:hover {
     margin: 20px 0;
 }
 .parameters li {
-    width: 250px;
+    width: 18.30161054172767%;
+    min-width: 150px;
     height: 100px;
     line-height: 100px;
     vertical-align: middle;
@@ -472,6 +474,109 @@ nav ul li a:hover {
 .contacts {
     background: #e2e6e9;
 }
-.on-map {
+.contacts .sub-title {
+    margin-bottom: 50px;
+}
+.contacts ul {
+    display: inline-block;
+    vertical-align: middle;
     width: 420px;
+    text-align: left;
+}
+.contacts ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contacts ul li:last-child {
+    margin-bottom: 0;
+}
+.contacts .image-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.contacts ul li:nth-child(1) .image-icon {background: url('../images/sprite-icons.png') no-repeat 0 center; background-size: cover;}
+.contacts ul li:nth-child(2) .image-icon {background: url('../images/sprite-icons.png') no-repeat 33% center; background-size: cover;}
+.contacts ul li:nth-child(3) .image-icon {background: url('../images/sprite-icons.png') no-repeat 66% center; background-size: cover;}
+.contacts ul li:nth-child(4) .image-icon {background: url('../images/sprite-icons.png') no-repeat 100% center; background-size: cover;}
+.contacts ul li p {
+    display: inline-block;
+}
+.contacts ul li p span {
+    font-size: 14px;
+}
+.on-map {
+    display: inline-block;
+    vertical-align: middle;
+    width: 420px;
+    margin: 0 25px;
+}
+.contacts form {
+    display: inline-block;
+    vertical-align: middle;
+}
+.contacts .logo {
+    margin: 20px auto;
+    background: url('../images/sprite-logo.png') no-repeat right center;
+    background-size: cover;
+}
+.contacts .icon-phone {
+    background: url('../images/sprite-phones.png') no-repeat right center;
+    background-size: cover;
+}
+
+/* media queries */
+@media (max-width: 1365px) {
+    .block-content {
+        width: 95%;
+    }
+    .header {
+        width: 100%;
+    }
+    .header-top .empty-block {
+        width: 4%;
+    }
+    .logo-block {
+        width: 25%;
+    }
+    .header-top-right {
+        width: 71%;
+    }
+    nav {
+        width: 55%;
+    }
+    .header .phone-block {
+        width: 275px;
+    }
+    h1 {font-size: 36px;}
+    h2 {font-size: 30px;}
+    h3 {font-size: 24px;}
+    .text {font-size: 20px;}
+    .header-middle {
+        width: 93%;
+    }
+    .header>.empty-block {
+        width: 2.5%;
+    }
+}
+@media (max-width: 1024px) {
+    .header-top .logo {
+        width: 65px;
+        margin: 13px 0 13px 5px;
+        background: url('../images/logo-short.png') no-repeat center;
+        background-size: cover;
+    }
+    .logo-block {
+        width: 16%;
+        min-width: 65px;
+    }
+    .header-top-right {
+        width: 80%;
+    }
+
+}
+@media (max-width: 768px) {
+
 }
