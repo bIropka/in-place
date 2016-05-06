@@ -1,0 +1,11 @@
+$(document).ready(function () {
+
+    /* scroll script */
+    $('a[href^="#"]').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+        return false;
+    });
+    /* the end of the scroll script */
+
+});

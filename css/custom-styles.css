@@ -41,13 +41,58 @@ ul li {display: inline-block;}
 .text-small {font-size: 18px;}
 .text {font-size: 24px;}
 h3 {font-size: 30px;}
-h2 {font-size: 36px;}
-h1 {font-size: 45px;}
+h2 {
+    display: inline-block;
+    margin: 35px 0;
+    font-size: 36px;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+h1 {
+    display: inline-block;
+    font-size: 43px;
+    letter-spacing: -2px;
+    line-height: 1.5;
+    margin: 25px 0 15px;
+}
+
+.sub-title {
+    display: block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 95%;
+    padding: 30px 0;
+    background: #be793e;
+    letter-spacing: 0;
+}
+
+.logo {
+    display: block;
+    width: 175px;
+    height: 44px;
+}
 
 .block-content {
     width: 95%;
     max-width: 1366px;
     margin: 0 auto;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.phone-block {
+    display: inline-block;
+    width: 350px;
+    height: 80px;
+}
+.phone-number {
+    line-height: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+.callback {
+    line-height: 40px;
+    height: 40px;
 }
 
 /* form */
@@ -88,24 +133,311 @@ form h3 {
 }
 
 /* header */
+.header {
+    background: url('../images/background-room.jpg') no-repeat center;
+}
+.header-top {
+    margin: 0 auto 35px;
+    text-align: left;
+}
+.header-top .empty-block {
+    display: inline-block;
+    width: 70px;
+    height: 80px;
+    background: #be793e;
+    vertical-align: middle;
+}
+.logo-block {
+    display: inline-block;
+    width: 400px;
+    height: 70px;
+    background: rgba(93, 81, 71, 0.9);
+    vertical-align: middle;
+}
+.header-top .logo {
+    width: 175px;
+    height: 44px;
+    margin: 13px 0 13px 10px;
+    background: url('../images/sprite-logo.png') no-repeat left center;
+    background-size: cover;
+}
+.header-top-right {
+    display: inline-block;
+    width: 896px;
+    height: 80px;
+    background: #be793e;
+    vertical-align: middle;
+}
+nav {
+    display: inline-block;
+    width: 546px;
+    vertical-align: middle;
+}
+nav ul {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+nav ul li {
+    margin: 0 2.5%;
+}
+nav ul li a {
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.header-top .phone-block {
+    vertical-align: middle;
+}
 
-/* choice */
-
+.header-middle {
+    display: inline-block;
+    width: 1220px;
+    height: 165px;
+    background: rgba(93, 81, 71, 0.9);
+    vertical-align: middle;
+}
+.header>.empty-block {
+    display: inline-block;
+    width: 50px;
+    height: 180px;
+    vertical-align: middle;
+    background: #be793e;
+}
+.header-middle h2 {
+    display: inline-block;
+    width: auto;
+    margin: 0 5px;
+}
+.header form {
+    margin: 35px 25px 0 0;
+    float: right;
+    background: rgba(93, 81, 71, 0.9);
+}
+/* choice-parameters */
+.parameters, .styles, .furniture, .guarantee ul, .why-we ul, .what-later ul {
+    margin: 20px 0;
+}
+.parameters li {
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    position: relative;
+}
+.parameters li:after {
+    display: inline-block;
+    content: '';
+    height: 100px;
+    border: 1px solid #e2e6e9;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.parameters li:last-child:after {
+    display: none;
+}
+/* choice-styles */
+.choice-styles, .cabinet-furniture {
+    padding-bottom: 0;
+}
+.styles li {
+    width: 400px;
+    height: 300px;
+    margin: 0 20px 20px;
+    position: relative;
+}
+.styles li:nth-child(1) {background: url('../images/room-fusion.jpg') no-repeat center; background-size: cover;}
+.styles li:nth-child(2) {background: url('../images/room-kitch.jpg') no-repeat center; background-size: cover;}
+.styles li:nth-child(3) {background: url('../images/room-loft.jpg') no-repeat center; background-size: cover;}
+.styles li:nth-child(4) {background: url('../images/room-art-deco.jpg') no-repeat center; background-size: cover;}
+.styles li:nth-child(5) {background: url('../images/room-provans.jpg') no-repeat center; background-size: cover;}
+.styles li:nth-child(6) {background: url('../images/room-romantic.jpg') no-repeat center; background-size: cover;}
+.styles li .text {
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(93, 81, 71, 0.8);
+}
 /* cabinet-furniture */
-
+.furniture {
+    margin-bottom: 0;
+}
+.furniture li {
+    width: 250px;
+    margin: 0 75px;
+}
+.furniture .text {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.furniture .image-furniture {
+    width: 250px;
+    height: 254px;
+}
+.furniture li:nth-child(1) .image-furniture {background: url('../images/kitchen.png') no-repeat center; background-size: cover;}
+.furniture li:nth-child(2) .image-furniture {background: url('../images/closet.png') no-repeat center; background-size: cover;}
+.furniture li:nth-child(3) .image-furniture {background: url('../images/library.png') no-repeat center; background-size: cover;}
 /* block-form */
-
+.block-form {
+    background: #e2e6e9;
+    margin-top: -127px;
+}
+.we-organize-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 730px;
+    background: #ffffff;
+    margin-right: 60px;
+    margin-top: 225px;
+    padding: 10px 0 25px;
+}
+.block-form h2 {
+}
+.we-organize {
+    width: 100%;
+    vertical-align: top;
+    margin-top: 15px;
+}
+.we-organize li {
+    display: block;
+    text-align: left;
+    margin-left: 200px;
+    width: 500px;
+    position: relative;
+    margin-bottom: 35px;
+}
+.we-organize li:before {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 62px;
+    background: url('../images/icon-ok.png') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: -117px;
+    top: -10px;
+}
+.we-organize h3 {
+    font-weight: 100;
+}
+.block-form form {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 225px;
+}
 /* guarantee */
-
+.guarantee, .why-we, .what-later {
+    border-bottom: 2px solid #e2e6e9;
+}
+.guarantee ul {
+    margin: 20px 0;
+}
+.guarantee ul li, .why-we ul li {
+    width: 400px;
+    margin: 0 25px;
+    vertical-align: top;
+}
+.guarantee ul li:nth-child(1) .image-guarantee {background: url('../images/icon-price.png') no-repeat center; background-size: cover;}
+.guarantee ul li:nth-child(2) .image-guarantee {background: url('../images/icon-quality-guarantee.png') no-repeat center; background-size: cover;}
+.guarantee ul li:nth-child(3) .image-guarantee {background: url('../images/icon-service-guarantee.png') no-repeat center; background-size: cover;}
+.image-guarantee {
+    width: 256px;
+    height: 256px;
+    margin: 0 auto 15px;
+}
+.guarantee .title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
 /* why-we */
-
+.why-we ul li {
+    text-align: left;
+}
 /* what-later */
-
+.what-later {
+    padding-bottom: 185px;
+}
+.what-later ul li {
+    width: 250px;
+    margin: 0 8px;
+    position: relative;
+}
+.image-arrow {
+    display: block;
+    width: 80px;
+    height: 65px;
+    background: url('../images/sprite-arrows.png') no-repeat left center;
+    background-size: cover;
+    position: absolute;
+    top: 80px;
+    right: -80px;
+}
+.what-later ul li:nth-child(2), .what-later ul li:nth-child(4) {
+    top: 150px;
+}
+.what-later ul li:nth-child(2) .image-arrow, .what-later ul li:nth-child(4) .image-arrow {
+    width: 90px;
+    top: -70px;
+    right: -30px;
+    background: url('../images/sprite-arrows.png') no-repeat right center;
+    background-size: cover;
+}
+.image-what-later {
+    width: 200px;
+    height: 201px;
+    margin: 0 auto 10px;
+}
+.what-later ul li:nth-child(1) .image-what-later {background: url('../images/estimation.png') no-repeat center; background-size: cover;}
+.what-later ul li:nth-child(2) .image-what-later {background: url('../images/contract.png') no-repeat center; background-size: cover;}
+.what-later ul li:nth-child(3) .image-what-later {background: url('../images/calendar.png') no-repeat center; background-size: cover;}
+.what-later ul li:nth-child(4) .image-what-later {background: url('../images/control.png') no-repeat center; background-size: cover;}
+.what-later ul li:nth-child(5) .image-what-later {background: url('../images/cargo.png') no-repeat center; background-size: cover;}
 /* questions */
-
+.questions {
+    text-align: left;
+    background: url('../images/very-clever-girl.png') no-repeat right bottom;
+    background-size: 781px 587px;
+}
+.questions h2 {
+    letter-spacing: 0;
+    margin-left: 3%;
+}
+.questions ol {
+    display: block;
+    width: 50%;
+    margin-left: 4%;
+}
+.questions ol li {
+    list-style-position: outside;
+    margin-bottom: 15px;
+}
+.questions .question {
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+.answer {
+    line-height: 1.2;
+}
 /* reviews */
-
+.reviews {
+    background: #e2e6e9;
+}
 /* contacts */
+.contacts {
+    background: #e2e6e9;
+}
 .on-map {
     width: 420px;
 }

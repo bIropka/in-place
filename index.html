@@ -12,21 +12,21 @@
 
     <div class="header-top">
 
-        <div class="empty-block"></div>
+        <div class="empty-block"></div><!--
 
-        <div class="logo"></div>
+     --><div class="logo-block"><div class="logo"></div></div><!--
 
-        <div class="header-top-right">
+     --><div class="header-top-right">
 
             <nav>
                 <ul>
-                    <li><a href="#services" class="text-white">Услуги</a></li>
-                    <li><a href="#guarantee" class="text-white">Гарантии</a></li>
-                    <li><a href="#contacts" class="text-white">Контакты</a></li>
+                    <li><a href="#services" class="text text-thin text-white">Услуги</a></li>
+                    <li><a href="#guarantee" class="text text-thin text-white">Гарантии</a></li>
+                    <li><a href="#contacts" class="text text-thin text-white">Контакты</a></li>
                 </ul>
-            </nav>
+            </nav><!--
 
-            <div class="phone-block">
+           --><div class="phone-block">
                 <h2 class="phone-number text-white">+7-985-790-99-09</h2>
 
                 <p class="text text-thin callback text-white">
@@ -39,7 +39,10 @@
 
     </div>
 
-    <div class="header-medium">
+
+    <div class="empty-block"></div><!--
+
+ --><div class="header-middle">
 
         <h1 class="text-white">Профессиональный подбор мебели для квартир и домов</h1>
 
@@ -49,7 +52,9 @@
 
         <h2 class="text-white">Поиск от 1 до 3 дней.</h2>
 
-    </div>
+    </div><!--
+
+ --><div class="empty-block"></div>
 
     <form action="#">
         <h3 class="text-white text-thin">Cэкономьте от 30% до 70%</h3>
@@ -58,21 +63,27 @@
         <input class="button-submit" type="submit" value="Заказать расчет">
     </form>
 
+    <div class="clearfix"></div>
+
 </div>
 
-<div class="block-content choice">
+<div class="block-content choice-parameters" id="services">
 
     <h2>Подберем мебель по ведущим параметрам</h2>
 
     <ul class="parameters">
-        <li>стоимость</li>
-        <li>срок</li>
-        <li>материал</li>
-        <li>цвет</li>
-        <li>РАЗМЕР</li>
+        <li class="text">стоимость</li>
+        <li class="text">срок</li>
+        <li class="text">материал</li>
+        <li class="text">цвет</li>
+        <li class="text">РАЗМЕР</li>
     </ul>
 
-    <h2 class="text-white">берем на себя все заботы по ПОИСКУ И ДОСТАВКЕ МЕБЕЛИ </h2>
+    <h2 class="text-white sub-title">берем на себя все заботы по ПОИСКУ И ДОСТАВКЕ МЕБЕЛИ </h2>
+
+</div>
+
+<div class="block-content choice-styles">
 
     <h2>Подберем мебель по популярным стилям<br>в том числе:</h2>
 
@@ -91,21 +102,18 @@
 
     <h2>Работаем с корпусной мебелью</h2>
 
-    <ul>
+    <ul class="furniture">
         <li>
             <p class="text text-thin">Кухни</p>
-
-            <div class="image-cabinet-furniture"></div>
+            <div class="image-furniture"></div>
         </li>
         <li>
             <p class="text text-thin">шкафы-купе</p>
-
-            <div class="image-cabinet-furniture"></div>
+            <div class="image-furniture"></div>
         </li>
         <li>
             <p class="text text-thin">библиотеки</p>
-
-            <div class="image-cabinet-furniture"></div>
+            <div class="image-furniture"></div>
         </li>
     </ul>
 
@@ -113,13 +121,17 @@
 
 <div class="block-content block-form">
 
-    <h2 class="text-brown">Организуем:</h2>
+    <div class="we-organize-block">
 
-    <ul class="we-organize">
-        <li><h3>Бесплатный замер</h3></li>
-        <li><h3>Бесплатный 3D проект</h3></li>
-        <li><h3>Бесплатный выезд дизайнера</h3></li>
-    </ul>
+        <h2 class="text-brown">Организуем:</h2>
+
+        <ul class="we-organize">
+            <li><h3 class="text-thin">Бесплатный замер</h3></li>
+            <li><h3 class="text-thin">Бесплатный 3D проект</h3></li>
+            <li><h3 class="text-thin">Бесплатный выезд дизайнера</h3></li>
+        </ul>
+
+    </div>
 
     <form action="#">
         <h3 class="text-white text-thin">Cэкономьте от 30% до 70%</h3>
@@ -130,7 +142,7 @@
 
 </div>
 
-<div class="block-content guarantee">
+<div class="block-content guarantee" id="guarantee">
 
     <h2>Что мы гарантируем</h2>
 
@@ -138,19 +150,16 @@
         <li>
             <div class="image-guarantee"></div>
             <p class="text title">гарантия<br>неизменной цены</p>
-
             <p class="text">В цену включено все! Никаких дополнительных расходов платить не придется</p>
         </li>
         <li>
             <div class="image-guarantee"></div>
             <p class="text title">Гарантия<br>качества</p>
-
             <p class="text">Мы работаем только с проверенными партнерами</p>
         </li>
         <li>
             <div class="image-guarantee"></div>
             <p class="text title">гарантия<br>сервиса</p>
-
             <p class="text">Отлаженная система взаимодействия. Максимально быстрое реагирование на любое обращение</p>
         </li>
     </ul>
@@ -164,27 +173,24 @@
     <ul>
         <li>
             <h3 class="text-brown">Репутация</h3>
-
-            <div class="text-small">
+            <p class="text-small">
                 За 5 лет работы мы заслужили хорошую репутацию. Нам доверили подбор таких проектов как: Крокус Экспо,
                 Шоколадница, Объектов города Сочи.
-            </div>
+            </p>
         </li>
         <li>
             <h3 class="text-brown">Ответственность</h3>
-
-            <div class="text-small">
+            <p class="text-small">
                 Досконально контролируем весь процесс: проверяем заказ, качество мебели, организуем доставку и помогаем
                 решать все вопросы.
-            </div>
+            </p>
         </li>
         <li>
             <h3 class="text-brown">Экономия</h3>
-
-            <div class="text-small">
+            <p class="text-small">
                 Сотрудничаем с большим количеством партнеров это позволяет подготовить для Вас самое выгодное
                 предложение на рынке, сэкономив ваш бюджет, силы и время .
-            </div>
+            </p>
         </li>
     </ul>
 
@@ -196,24 +202,28 @@
 
     <ul>
         <li>
+            <div class="image-arrow"></div>
             <div class="image-what-later"></div>
             <p class="text-small text-thin">
                 Подаете заявку и получаете предварительный расчет
             </p>
         </li>
         <li>
+            <div class="image-arrow"></div>
             <div class="image-what-later"></div>
             <p class="text-small text-thin">
                 Составляем подробную смету, заключаем договор
             </p>
         </li>
         <li>
+            <div class="image-arrow"></div>
             <div class="image-what-later"></div>
             <p class="text-small text-thin">
                 Согласовываем дату доставки
             </p>
         </li>
         <li>
+            <div class="image-arrow"></div>
             <div class="image-what-later"></div>
             <p class="text-small text-thin">
                 Организуем работу. Контролируем исполнение
@@ -235,51 +245,46 @@
 
     <ol>
         <li class="text-brown">
-            <p class="text-small question">
+            <p class="text-small question text-brown">
                 У меня есть мебель в гостинной, нужно подобрать под нее мебель в остальные помещения, это возможно?
             </p>
-
             <p class="text-small answer">
                 Да, возможно! Мы работаем с широким спектром производителей мебели и можем подобрать предмет интерьера
                 по любому индивидульному параметру.
             </p>
         </li>
         <li class="text-brown">
-            <p class="text-small question">
+            <p class="text-small question text-brown">
                 Почему Ваши цены ниже рыночных?
             </p>
-
             <p class="text-small answer">
                 Мы работаем напрямую с производителями, без посредников. Мы не тратим бюджет на рекламу, аренду студий и
                 шоу-румов.
             </p>
         </li>
         <li class="text-brown">
-            <p class="text-small question">
+            <p class="text-small question text-brown">
                 Постоянная занятость не позволяет нам полноценно заняться поиском мебели. У вас есть возможность
                 приехать к нам домой?
             </p>
-
             <p class="text-small answer">
                 Мы можем предложить вам опытного дизайнера, который подъедет к вам в любое удобное время. Составит
                 дизайн проект, ознакомит с материалами и образцами мебели.
             </p>
         </li>
         <li class="text-brown">
-            <p class="text-small question">
+            <p class="text-small question text-brown">
                 Я хочу купить мебель Европейского уровня по российской цене. Возможно ли это сделать?
             </p>
-
             <p class="text-small answer">
                 Для вас у нас есть уникальные предложения от немецких и итальянских производителей, которые перевезли
                 свое производство в Россию, сохранив доступные цены.
             </p>
         </li>
         <li class="text-brown">
-            <p class="text-small question">
+            <p class="text-small question text-brown">
                 Могут ли воспользоваться вашими услугами дизайнеры интерьеров?
             </p>
-
             <p class="text-small answer">
                 В нашей команде уже более 300 проффесиональных мастеров по созданию интерьера, в том числе и дизайнеры.
                 Для них созданы уникальные условия сотрудничества, это и квалифицированная помощь в подборе , и
@@ -322,11 +327,11 @@
         </li>
     </ul>
 
-    <h3 class="text-white">Создадим единое композиционное решение</h3>
-
 </div>
 
-<div class="block-content contacts">
+<div class="block-content contacts" id="contacts">
+
+    <h3 class="text-white sub-title">Создадим единое композиционное решение</h3>
 
     <ul>
         <li>
@@ -384,6 +389,10 @@
     </div>
 
 </div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/custom-scripts.js"></script>
 
 </body>
 </html>
