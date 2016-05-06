@@ -37,7 +37,7 @@ ul li {display: inline-block;}
 .text-grey {color: #999999;}
 .text-white {color: #ffffff;}
 .text-thin {font-family: "OpenSans Regular", sans-serif;}
-.text-ultra-small {font-size: 14px;}
+.text-ultra-small {font-size: 12px;}
 .text-small {font-size: 18px;}
 .text {font-size: 24px;}
 h3 {font-size: 30px;}
@@ -61,7 +61,7 @@ h1 {
     text-transform: uppercase;
     margin: 0 auto;
     width: 95%;
-    padding: 30px 0;
+    padding: 20px 0;
     background: #be793e;
     letter-spacing: 0;
 }
@@ -85,14 +85,14 @@ h1 {
     width: 350px;
     height: 80px;
 }
-.phone-number {
+.phone-block .phone-number {
     line-height: 35px;
     height: 35px;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
 }
 .callback {
-    line-height: 40px;
-    height: 40px;
+    line-height: 35px;
+    height: 35px;
 }
 
 /* form */
@@ -191,6 +191,14 @@ nav ul li a:hover {
 }
 .header-top .phone-block {
     vertical-align: middle;
+}
+.header .icon-phone {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 38px;
+    background: url('../images/sprite-phones.png') no-repeat left center;
+    background-size: cover;
 }
 
 .header-middle {
@@ -299,10 +307,8 @@ nav ul li a:hover {
     width: 730px;
     background: #ffffff;
     margin-right: 60px;
-    margin-top: 225px;
+    margin-top: 175px;
     padding: 10px 0 25px;
-}
-.block-form h2 {
 }
 .we-organize {
     width: 100%;
@@ -334,7 +340,7 @@ nav ul li a:hover {
 .block-form form {
     display: inline-block;
     vertical-align: top;
-    margin-top: 225px;
+    margin-top: 175px;
 }
 /* guarantee */
 .guarantee, .why-we, .what-later {
@@ -343,7 +349,7 @@ nav ul li a:hover {
 .guarantee ul {
     margin: 20px 0;
 }
-.guarantee ul li, .why-we ul li {
+.guarantee ul li, .why-we ul li, .reviews ul li {
     width: 400px;
     margin: 0 25px;
     vertical-align: top;
@@ -432,7 +438,35 @@ nav ul li a:hover {
 }
 /* reviews */
 .reviews {
+    padding: 75px 0 50px;
     background: #e2e6e9;
+}
+.reviews ul li {
+    text-align: left;
+}
+.image-reviewer {
+    display: inline-block;
+    vertical-align: middle;
+    width: 151px;
+    height: 151px;
+    position: relative;
+}
+.reviews ul li:nth-child(1) .image-reviewer {background: url('../images/photo-reviewer-1.png') no-repeat center; background-size: cover;}
+.reviews ul li:nth-child(2) .image-reviewer {background: url('../images/photo-reviewer-2.png') no-repeat center; background-size: cover;}
+.reviews ul li:nth-child(3) .image-reviewer {background: url('../images/photo-reviewer-3.png') no-repeat center; background-size: cover;}
+.image-reviewer .reviewer-name {
+    width: 200%;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+.reviews .review {
+    display: inline-block;
+    vertical-align: middle;
+    width: 240px;
+    margin-left: 5px;
 }
 /* contacts */
 .contacts {
