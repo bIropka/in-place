@@ -4,14 +4,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['phone-1'])) {$phone = $_POST['phone-1'];}
     if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
-    $to = "biropka@gmail.com"; /*Укажите адрес, на который должно приходить письмо*/
+    $to = "boxinplace@gmail.com"; /*Укажите адрес, на который должно приходить письмо*/
     $sendfrom   = "In plain"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
     $subject = "$formData";
-    $message = "$formData <br><b>Клиент хочет заказать подбор</b> <br> <b>Имя клиента:</b> $name <br><b>Телефон:</b> $phone ";
+    $message = "$formData <br><b>Клиент хочет заказать подбор (Форма 1)</b> <br> <b>Имя клиента:</b> $name <br><b>Телефон:</b> $phone ";
     $send = mail ($to, $subject, $message, $headers);
     if ($send == 'true')
     {

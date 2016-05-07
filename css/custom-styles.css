@@ -8,7 +8,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "OpenSans Semibold", sans-serif;
-    color: #333333;
+    color: #5d5147;
 }
 
 button, input[type="submit"] {
@@ -84,11 +84,14 @@ h1 {
     display: inline-block;
     width: 300px;
     height: 80px;
+    text-align: center;
 }
 .phone-block .phone-number {
     line-height: 35px;
     height: 35px;
     margin: 5px 0 0 0;
+    width: 100%;
+    text-align: center;
 }
 .phone-block .icon-phone {
     display: inline-block;
@@ -109,8 +112,12 @@ form {
     padding: 35px 0 30px;
 }
 form h3 {
-    letter-spacing: -2px;
-    font-size: 28px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    width: 85%;
+    margin: auto;
 }
 .form-field-wrap {
     display: block;
@@ -164,7 +171,7 @@ form h3 {
     vertical-align: middle;
 }
 .header-top .logo {
-    margin: 13px 0 13px 10px;
+    margin: 13px auto 13px;
     background: url('../images/sprite-logo.png') no-repeat left center;
     background-size: cover;
 }
@@ -303,7 +310,7 @@ nav ul li a:hover {
 }
 .furniture .image-furniture {
     width: 250px;
-    height: 254px;
+    height: 250px;
 }
 .furniture li:nth-child(1) .image-furniture {background: url('../images/kitchen.png') no-repeat center; background-size: cover;}
 .furniture li:nth-child(2) .image-furniture {background: url('../images/closet.png') no-repeat center; background-size: cover;}
@@ -338,8 +345,8 @@ nav ul li a:hover {
 .we-organize li:before {
     content: '';
     display: block;
-    width: 72px;
-    height: 62px;
+    width: 62px;
+    height: 61px;
     background: url('../images/icon-ok.png') no-repeat center;
     background-size: cover;
     position: absolute;
@@ -477,7 +484,7 @@ nav ul li a:hover {
 .reviews .review {
     display: inline-block;
     vertical-align: middle;
-    width: 240px;
+    width: 230px;
     margin-left: 5px;
 }
 /* contacts */
@@ -503,14 +510,14 @@ nav ul li a:hover {
 .contacts .image-icon {
     display: inline-block;
     vertical-align: middle;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
-.contacts ul li:nth-child(1) .image-icon {background: url('../images/sprite-icons.png') no-repeat 0 center; background-size: cover;}
-.contacts ul li:nth-child(2) .image-icon {background: url('../images/sprite-icons.png') no-repeat 33% center; background-size: cover;}
-.contacts ul li:nth-child(3) .image-icon {background: url('../images/sprite-icons.png') no-repeat 66% center; background-size: cover;}
-.contacts ul li:nth-child(4) .image-icon {background: url('../images/sprite-icons.png') no-repeat 100% center; background-size: cover;}
+.contacts ul li:nth-child(1) .image-icon {background: url('../images/icon-phone.png') no-repeat center; background-size: cover;}
+.contacts ul li:nth-child(2) .image-icon {margin-right:11px;width:39px;height:30px;background: url('../images/icon-mail.png') no-repeat center; background-size: cover;}
+.contacts ul li:nth-child(3) .image-icon {margin-right:11px;width:39px;height:31px;background: url('../images/icon-home.png') no-repeat center; background-size: cover;}
+.contacts ul li:nth-child(4) .image-icon {margin-left:-5px;margin-right:0;width:51px;height:51px;background: url('../images/icon-time.png') no-repeat center; background-size: cover;}
 .contacts ul li p {
     display: inline-block;
     vertical-align: middle;
@@ -631,8 +638,8 @@ nav ul li a:hover {
         margin-left: 100px;
     }
     .we-organize li::before {
-        width: 50px;
-        height: 42px;
+        width: 51px;
+        height: 50px;
         left: -70px;
         top: -5px;
     }
@@ -769,8 +776,9 @@ nav ul li a:hover {
         width: 300px;
     }
     form h3 {
-        width: 62%;
-        margin: 0 19%;
+        width: 61%;
+        margin: 0;
+        text-align: center;
     }
     .form-field::-webkit-input-placeholder {font-size: 18px;}
     .form-field::-moz-placeholder {font-size: 18px;}
@@ -815,6 +823,7 @@ nav ul li a:hover {
         width: 40px;
         height: 33px;
         left: -50px;
+        top:0;
     }
     .guarantee ul li, .why-we ul li, .reviews ul li {
         display: block;
