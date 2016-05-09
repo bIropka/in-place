@@ -238,6 +238,7 @@ nav ul li a:hover {
     display: inline-block;
     width: auto;
     margin: 0 5px;
+    letter-spacing: -2px;
 }
 .header form {
     margin: 35px 25px 0 0;
@@ -411,17 +412,17 @@ nav ul li a:hover {
 .guarantee ul {
     margin: 20px 0;
 }
-.guarantee ul li, .why-we ul li {
-    width: 400px;
-    margin: 0 25px;
+.guarantee ul li {
+    width: 300px;
+    margin: 0 50px;
     vertical-align: top;
 }
 .guarantee ul li:nth-child(1) .image-guarantee {background: url('../images/icon-price.png') no-repeat center; background-size: cover;}
 .guarantee ul li:nth-child(2) .image-guarantee {background: url('../images/icon-quality-guarantee.png') no-repeat center; background-size: cover;}
 .guarantee ul li:nth-child(3) .image-guarantee {background: url('../images/icon-service-guarantee.png') no-repeat center; background-size: cover;}
 .image-guarantee {
-    width: 256px;
-    height: 256px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto 15px;
 }
 .guarantee .title {
@@ -431,13 +432,18 @@ nav ul li a:hover {
     letter-spacing: -2px;
     line-height: 1.2;
 }
+
 /* why-we */
 .why-we {
     background: #e2e6e9;
 }
 .why-we ul li {
+    width: 360px;
+    margin: 0 25px;
+    vertical-align: top;
     text-align: left;
 }
+
 /* what-later */
 .what-later {
     padding-bottom: 185px;
@@ -589,6 +595,10 @@ nav ul li a:hover {
 .reviews ul li:nth-child(2) .image-reviewer {
     float: right;
 }
+.reviews ul li:nth-child(2) .reviewer-name {
+    text-align: center;
+    width: 100%;
+}
 .reviews ul li:nth-child(2) .review {
     margin-left: 0;
     margin-right: 50px;
@@ -708,7 +718,16 @@ nav ul li a:hover {
 .footer .logo {
     background: url('../images/sprite-logo.png') no-repeat right center;
     background-size: cover;
-    margin: 50px auto 10px;
+    margin: 50px auto 15px;
+}
+.footer .phone-block {
+    height: 90px;
+}
+.footer .phone-number {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+    font-size: 36px;
 }
 .footer .icon-phone {
     width: 40px;
@@ -791,16 +810,16 @@ nav ul li a:hover {
     h3 {font-size: 24px;}
     .text {font-size: 20px;}
     .header-middle {
-        width: 93%;
-        padding: 10px 0 20px;
+        width: 100%;
+        padding: 10px 3% 20px;
     }
     .empty-block-left {
         width: 2.5%;
-        left: -2.5%;
+        left: 0!important;
     }
     .empty-block-right {
         width: 2.5%;
-        right: -2.5%;
+        right: 0!important;
     }
     .image-arrow {
         display: none;
@@ -832,6 +851,9 @@ nav ul li a:hover {
     .parameters li:nth-child(4):after {display: none;}
     .parameters li:nth-child(4) {margin-right: 10px;}
     .parameters li:nth-child(1) {margin-left: 10px;}
+}
+.guarantee ul li {
+    margin: 0 25px;
 }
 @media (max-width: 1180px) {
     .parameters li:nth-child(4) {margin-right: 0}
@@ -911,7 +933,7 @@ nav ul li a:hover {
         width: 40%;
     }
     .header-top-right {
-        width: 55%;
+        width: 56%;
         text-align: center;
     }
     .header .phone-block {
@@ -975,7 +997,7 @@ nav ul li a:hover {
 }
 @media (max-width: 480px) {
     .header .empty-block {
-        display: none;
+        width: 5%;
     }
     .logo-block {
         width: 25%;
@@ -985,7 +1007,7 @@ nav ul li a:hover {
         width: 65px;
     }
     .header-top-right {
-        width: 75%;
+        width: 70%;
     }
     h1 {font-size: 30px;line-height: 1.2;}
     h2 {font-size: 24px;line-height: 1.2;}
@@ -993,6 +1015,9 @@ nav ul li a:hover {
     .text {font-size: 20px;line-height: 1.2;}
     .header .phone-block {
         width: 200px;
+    }
+    .header-middle h3 {
+        letter-spacing: 0;
     }
     form {
         width: 300px;
