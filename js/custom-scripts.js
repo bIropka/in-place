@@ -18,7 +18,10 @@ $(document).ready(function () {
 
     /**** animation scripts *****/
     window.sr = ScrollReveal();
-    sr.reveal('.block-content', {reset: true});
+    sr.reveal('.block-content', {
+        reset: true,
+        mobile: false
+    });
     /** end of animation scripts **/
 
 });
