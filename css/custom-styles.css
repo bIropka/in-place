@@ -479,6 +479,9 @@ nav ul li a:hover {
     color: #ffffff;
     line-height: 20px;
     padding: 5px 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
 }
 .what-later li:nth-child(4) .image-what-later p {
     padding: 0;
@@ -567,15 +570,18 @@ nav ul li a:hover {
 }
 .review {
     display: inline-block;
-    padding: 20px 20px 0 20px;
+    padding: 30px 20px;
     vertical-align: top;
     width: 675px;
     height: 151px;
     margin-left: 50px;
-    font-size: 21px;
+    font-size: 20px;
     border: 3px solid rgba(255, 255, 255, 1);
     position: relative;
     text-align: left;
+}
+.reviews ul li:nth-child(1) .review {
+    padding: 15px 20px;
 }
 .reviews ul li:nth-child(2) .image-reviewer {
     float: right;
