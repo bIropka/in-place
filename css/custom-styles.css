@@ -258,7 +258,7 @@ nav ul li a:hover {
     margin: 20px 0;
 }
 .parameters {
-    margin: 20px 0 50px;
+    margin-bottom: 50px
 }
 .parameters li {
     display: inline-block;
@@ -273,6 +273,7 @@ nav ul li a:hover {
     margin-bottom: 25px;
     font-size: 14px;
     padding-top: 13px;
+    margin-top: 50px;
 }
 .parameters li:nth-child(3) {padding-top: 20px;}
 .parameters li:last-child {
@@ -306,6 +307,15 @@ nav ul li a:hover {
     position: absolute;
     right: -50px;
     top: 42px;
+}
+.parameters li .title {
+    position: absolute;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgba(93, 81, 71, 1);
+    width: 100%;
+    top: -50px;
 }
 .parameters li:last-child:after {
     display: none;
@@ -873,8 +883,8 @@ nav ul li a:hover {
         margin: 50px 25px;
     }
     .parameters li:nth-child(4):after {display: none;}
-    .parameters li:nth-child(4) {margin-right: 10px;}
-    .parameters li:nth-child(1) {margin-left: 10px;}
+    .parameters li:nth-child(4) {margin-right: 50px;}
+    .parameters li:nth-child(1) {margin-left: 50px;}
     .services-block>h3 {
         padding-left: 100px;
     }
@@ -970,7 +980,7 @@ nav ul li a:hover {
 }
 @media (max-width: 800px) {
     .parameters li {
-        margin: 0 25px 50px!important;
+        margin: 50px 25px 50px!important;
     }
     .parameters li:after {
         display: none!important;
